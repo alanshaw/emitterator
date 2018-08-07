@@ -53,7 +53,7 @@ async function * count () {
   }
 }
 
-// create a new emitterator to emit values from the `count` iterator
+// create a new emitter to emit values from the `count` iterator
 const emitter = new Emitterator(count())
 
 emitter.on('value', console.log) // logs 0, 1, 2, 3 ...
@@ -61,8 +61,8 @@ emitter.on('value', console.log) // logs 0, 1, 2, 3 ...
 
 `options` is an optional object that may contain the following properties:
 
-* `options.eventName` (string) A custom name for the event emitted when the iterator yields a value
-* `options.transformValue` (function) A (async) function that can be used to transform the value yielded by the iterator before it is emitted
+* `eventName` (string) A custom name for the event emitted when the iterator yields a value
+* `transformValue` (function) A (async) function that can be used to transform the value yielded by the iterator before it is emitted
 
 ### `emitter.cancel(): Promise`
 
