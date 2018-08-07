@@ -1,6 +1,6 @@
 {
   "name": "emitterator",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Async iterator to event emitter",
   "main": "src/Emitterator.js",
   "scripts": {
